@@ -1,4 +1,5 @@
 import React, { useState, createContext } from "react";
+import Link from "Next/link";
 
 import styles from "../styles/Home.module.css";
 import { employeesProfile } from "../constants/employee-profile";
@@ -9,7 +10,6 @@ const Main = () => {
   const [name, setName] = useState("");
   console.log("outside" + name);
   return (
-    
     <DataContext.Provider value={name}>
       <div>
         <main className={styles.main}>
@@ -19,19 +19,19 @@ const Main = () => {
 
           <div className={styles.grid}>
             {employeesProfile.map((user) => (
-              <a
+              <Link
+                href="/profile"
                 onClick={() => {
                   setName(user.name);
                   console.log("inside" + name);
                 }}
                 key={user.id}
-                href="/profile"
                 className={styles.card}
               >
                 <h2>{`Name: ${user.name}`}</h2>
                 <p>{`Role: ${user.position}`}</p>
                 <p>{`Employee ID: ${user.id}`}</p>
-              </a>
+              </Link>
             ))}
           </div>
         </main>
