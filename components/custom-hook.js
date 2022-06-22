@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useCustomHook = (url) => {
+export const useCustomHook = (url) => {
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -11,4 +11,4 @@ const useCustomHook = (url) => {
   return [data];
 };
 
-export default useCustomHook;
+// export default useCustomHook;

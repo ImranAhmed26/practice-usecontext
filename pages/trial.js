@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import useCustomHook from "../components/custom-hook";
+import { useCustomHook } from "../components/custom-hook";
 
 const Trial1 = () => {
   const [data] = useCustomHook("https://jsonplaceholder.typicode.com/todos");

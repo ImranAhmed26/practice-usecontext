@@ -25,7 +25,7 @@ const Main = () => {
                   console.log("inside" + name);
                 }}
                 key={user.id}
-                // href="/profile"
+                // href="/User profile"
                 className={styles.card}
               >
                 <h2>{`Name: ${user.name}`}</h2>
