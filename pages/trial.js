@@ -5,7 +5,7 @@ const Trial1 = () => {
   const [data] = useCustomHook("https://jsonplaceholder.typicode.com/todos");
 
   return (
-    <>
+    <div>
       {data &&
         data.map((item) => {
           return (
@@ -15,7 +15,7 @@ const Trial1 = () => {
             </div>
           );
         })}
-    </>
+    </div>
   );
 };
 
