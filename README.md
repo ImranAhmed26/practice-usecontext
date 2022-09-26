@@ -1,4 +1,4 @@
-This is a use context practice project to learn React useContext
+This is a just for practicing useContext to learn React useContext
 
 ## Getting Started
 
